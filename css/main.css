@@ -1,1 +1,139 @@
-/*  */
+/* General  */
+:root {
+  --very-ligth-blue: #dde7ee;
+  --very-gray-blue: #dde7ee;
+  --dark-gray-blue: #5e6778;
+  --gray-blue: #939cad;
+  --blue: #0a327b;
+  --snow: #f7fafd;
+  --red: #f65552;
+}
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;  
+}
+
+body {
+  background-color: var(--very-ligth-blue);
+  font-family: sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+a {
+  text-decoration: none;
+  color: var(--dark-gray-blue);
+}
+
+/* Notifications */
+.notifications {
+  background-color: white;
+  max-width: 768px;
+  height: auto;
+  border-radius: 15px;
+  padding: 2.5rem;
+  margin-top: 10rem;
+}
+
+/* Header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+.header__title {
+  margin: 0;
+  font-size: 1.8rem;
+} 
+.unread-count {
+  background-color: var(--blue);
+  color: white;
+  font-size: 1.5rem;
+  padding: .2rem .7rem;
+  border-radius: 6px;
+  margin-left: .2rem;
+}
+
+/* Notification */
+.notification {
+  display: grid;
+  grid-template-columns: min-content 1fr;
+  grid-template-areas: "avatar title" "avatar date";
+  column-gap: 1rem;
+  row-gap: .6rem;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+.notification--unread {
+  background-color: var(--very-ligth-blue);
+  border-radius: 8px;
+}
+.notification--message {
+  grid-template-areas: "avatar title" "avatar date" ". message";
+}
+
+.notification--picture {
+  grid-template-columns: min-content 1fr min-content;  
+  grid-template-areas: "avatar title image" "avatar date image" ;
+}
+
+.notification > * {
+  margin: 0;
+}
+.avatar {
+  width: 45px;
+  height: auto;
+  grid-area: avatar;
+}
+.notification__title {
+  font-weight: normal;
+  font-size: 1.1rem;
+  grid-area: title;
+  text-align: start;
+  color: var(--dark-gray-blue);
+}
+.link {
+  font-weight: bold;
+}
+.link--post {
+  color: var(--blue);
+}
+.unread-bubble {
+  background-color: var(--red);
+  width: 8px;
+  height: 8px;
+  display: inline-block;
+  border-radius: 50%;
+  margin-left: .3rem;
+  vertical-align: middle;
+}
+
+.notification__title strong {
+  color: black;
+}
+.date {
+  grid-area: date;
+  color: var(--gray-blue);
+  font-size: 1.1rem;
+}
+.notification__message {
+  grid-area: message;
+  color: var(--dark-gray-blue);
+  border: 1px solid var(--very-gray-blue);
+  border-radius: 5px;
+  padding: 1.2rem;
+}
+.notification__image {
+  width: 45px;
+  height: 45px;
+  grid-area: image;
+}
+
+.attribution {
+  padding: 2rem;
+}

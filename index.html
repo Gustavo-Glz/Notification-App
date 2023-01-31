@@ -11,28 +11,53 @@
 
   <!-- Notifications -->
   <main class="notifications">
-
     <!-- Header -->
     <header class="header">
-      <h1 class="header__title">Notifications 3</h1>
+      <h1 class="header__title">Notifications <span class="unread-count">3</span></h1>
       <a class="header__link" href="#">Mark all as read</a>
     </header>
 
-    <!-- Notification -->
+    <!-- Notification unread -->
     <article class="notification notification--unread">
       <img class="avatar" src="assets/images/avatar-mark-webber.webp" alt="User Avatar">
       <h2 class="notification__title">
         <strong>Mark Webber</strong>  
         reacted to your recent post
-        <a class="link link--post" href="#">
-          <span class="unread-bubble">My first tournament today!</span> 
+        <a class="link" href="#">
+          My first tournament today!
         </a>
+        <span class="unread-bubble"></span> 
       </h2>
       <p class="date">1m ago</p>
     </article>
 
-    <!-- Notification -->
-    <article class="notification">
+     <!-- Notification unread -->
+     <article class="notification notification--unread">
+      <img class="avatar" src="assets/images/avatar-angela-gray.webp" alt="User Avatar">
+      <h2 class="notification__title">
+        <strong>Angela Gray</strong>  
+        followed you
+        <span class="unread-bubble"></span> 
+      </h2>
+      <p class="date">5m ago</p>
+    </article>
+
+    <!-- Notification unread -->
+    <article class="notification notification--unread">
+      <img class="avatar" src="assets/images/avatar-jacob-thompson.webp" alt="User Avatar">
+      <h2 class="notification__title">
+        <strong>Jacob Thompson</strong>  
+        has joined your group
+        <a class="link link--post" href="#">
+          Chess Club
+        </a>
+        <span class="unread-bubble"></span> 
+      </h2>
+      <p class="date">1 day ago</p>
+    </article>
+
+    <!-- Notification message -->
+    <article class="notification notification--message">
       <img class="avatar" src="assets/images/avatar-rizky-hasanuddin.webp" alt="User Avatar">
       <h2 class="notification__title">
         <strong>Rizky Hasanuddin</strong>
@@ -44,34 +69,50 @@
         I'm already having lots of fun and improving my game.
       </p>
     </article>
+
+     <!-- Notification picture -->
+    <article class="notification notification--picture">
+      <img class="avatar" src="assets/images/avatar-kimberly-smith.webp" alt="User Avatar">
+      <h2 class="notification__title">
+        <strong>Kimberly Smith</strong>  
+        commented on your picture
+      </h2>
+      <p class="date">1 week ago</p>
+      <img class="notification__image" src="assets/images/image-chess.webp" alt="Imagen Attached">
+    </article>
+
+      <!-- Notification -->
+      <article class="notification">
+        <img class="avatar" src="assets/images/avatar-nathan-peterson.webp" alt="User Avatar">
+        <h2 class="notification__title">
+          <strong>Nathan Peterson</strong>  
+          reacted to your recent post
+          <a class="link" href="#">
+            5 end-game strategies to increase your win rate
+          </a>
+        </h2>
+        <p class="date">2 weeks ago</p>
+      </article>
+
+    <!-- Notification  -->
+    <article class="notification">
+      <img class="avatar" src="assets/images/avatar-anna-kim.webp" alt="User Avatar">
+      <h2 class="notification__title">
+        <strong>Anna Kim</strong>  
+        left the group 
+        <a class="link link--post" href="#">
+          Chess Club
+        </a>
+      </h2>
+      <p class="date"> 2 weeks ago</p>
+    </article>
   </main>
 
- 
-
-  
-
-  <!-- 
-
-  Angela Gray followed you
-  5m ago
-
-  Jacob Thompson has joined your group Chess Club
-  1 day ago
-
-  
-
-  Kimberly Smith commented on your picture
-  1 week ago
-
-  Nathan Peterson reacted to your recent post 5 end-game strategies to increase your win rate
-  2 weeks ago
-
-  Anna Kim left the group Chess Club
-  2 weeks ago -->
-  
-  <!-- <div class="attribution">
+  <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div> -->
+    Coded by <a href="#">Gustavo González Montalvo</a>.
+  </div>
+
+  <script src="js/main.js"></script>
 </body>
 </html>
